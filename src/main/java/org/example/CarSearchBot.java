@@ -36,7 +36,7 @@ public class CarSearchBot extends TelegramLongPollingBot {
 
         try {
             this.execute(new SetMyCommands(botCommandList, new BotCommandScopeDefault(), null));
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/carsearch", "root", "1991");
+            connection = DriverManager.getConnection("PRIVATE DATA", "PRIVATE DATA", "PRIVATE DATA");
         } catch (TelegramApiException error) {
             throw new RuntimeException(error);
         } catch (SQLException e) {
@@ -252,10 +252,10 @@ public class CarSearchBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "CarSearch";
+        return "PRIVATE DATA";
     }
 
     public String getBotToken() {
-        return "6200918156:AAE4McLtN0DRWN8uPPsBQTl8aJqPZftO8Do";
+        return "6200918156:PRIVATE DATA";
     }
 }
